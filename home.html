@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!---box icon link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!---google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+    <!--header-->
+    <header>
+      <a href="#" class="logo">
+        <img src="images/logohome.png" alt="" />
+      </a>
+
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="Buying.html">Buying </a></li>
+        <li><a href="Renting.html">Renting</a></li>
+        <li><a href="Selling.html">Selling</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+
+      <div class="h-btn">
+        <a href="#" class="h-btn1">Login</a>
+        <a href="#" class="h-btn2">SignUp</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <!--home section-->
+    <section class="home">
+      <div class="home-text" data-aos="zoom-in-up">
+        <h1>Your House is Waiting For You!</h1>
+        <p>
+          Your dream home is eagerly awaiting your arrival in the Bay Area. It's
+          more than bricks and mortar; it's where your life's chapters unfold.
+          Whether it's a cozy cottage, a modern urban retreat, or a spacious
+          family haven, we're here to guide you on this exciting journey. Let's
+          find the perfect place that truly feels like home in the Bay Area –
+          your house is waiting for you!
+        </p>
+
+        <div class="h-search">
+          <form>
+            <input
+              type="search"
+              placeholder="Search by location... "
+              class="search-input"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="home-img" data-aos="zoom-in-up">
+        <img src="images/house-1.avif" alt="" />
+      </div>
+    </section>
+
+    <!--Introduction section-->
+    <section class="intro">
+      <div class="intro-img" data-aos="zoom-in-up">
+        <img src="images/humanimg.avif" alt="" />
+      </div>
+      <div class="intro-text" data-aos="zoom-in-up">
+        <h1>Ravi Pavagada</h1>
+        <p>
+          Welcome to the Bay Area, where opportunities abound, and dreams find
+          their perfect home. If you're embarking on a real estate journey in
+          this vibrant and dynamic region, allow me to introduce you to your
+          guiding light: Ravi, your trusted Realtor. With a deep-rooted passion
+          for real estate and an unwavering commitment to your success, Ravi is
+          your dedicated partner in navigating the diverse and ever-evolving Bay
+          Area housing market. Whether you're a first-time homebuyer, a seasoned
+          investor, or looking to sell your property, Ravi's expertise and local
+          knowledge are your invaluable assets in achieving your real estate
+          goals.
+        </p>
+        <p>
+          Ravi brings a unique blend of professionalism, integrity, and a
+          personalized approach to each client relationship. His comprehensive
+          understanding of the Bay Area's neighborhoods, market trends, and
+          property values ensures that you'll make informed decisions every step
+          of the way.
+        </p>
+      </div>
+    </section>
+
+    <!--About section-->
+    <section class="about">
+      <div class="about-text" data-aos="zoom-in-up">
+        <h2>We Help People To Find Homes</h2>
+        <p>
+          In the diverse and bustling Bay Area, our mission is simple yet
+          profound: We help people find homes. Our commitment extends beyond
+          just real estate transactions; it's about connecting individuals and
+          families with the perfect place to call home in one of the most
+          sought-after regions in the world. With an intimate knowledge of the
+          Bay Area's neighborhoods, communities, and the unique lifestyle they
+          offer, we serve as guides and advocates for our clients. Whether
+          you're searching for a cozy city apartment with breathtaking views of
+          the San Francisco skyline, a tranquil suburban retreat in Silicon
+          Valley, or a wine country escape surrounded by vineyards, we're here
+          to make your homeownership dreams a reality. Let us be your trusted
+          partner in this exciting journey of finding not just a house, but a
+          true home in the heart of the Bay Area.
+        </p>
+      </div>
+      <div class="about-img" data-aos="zoom-in-up">
+        <img src="images/home1.avif" alt="" />
+      </div>
+    </section>
+
+    <!--Contact Us-->
+    <section class="contact">
+      <div class="contact-content">
+        <img src="images/logohome.png" alt="" />
+        <div class="contact-content-text">
+          <p>
+            Your house is not just a dwelling; it's a reflection of you, and
+            it's waiting for you to make it your own, right here in the Bay
+            Area.
+          </p>
+          <div id="icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--AOS Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1200,
+      });
+    </script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="index.js"></script>
+    <script>
+      barba.init({
+        transitions: [
+          {
+            name: "opacity-transition",
+            leave(data) {
+              return gsap.to(data.current.container, {
+                opacity: 0,
+              });
+            },
+            enter(data) {
+              return gsap.from(data.next.container, {
+                opacity: 0,
+              });
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

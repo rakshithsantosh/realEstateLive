@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!---box icon link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!---google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-barba="wrapper">
+    <!--header-->
+    <header>
+      <a href="#" class="logo">
+        <img src="images/logohome.png" alt="" />
+      </a>
+
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="Buying.html">Buying </a></li>
+        <li><a href="Renting.html">Renting</a></li>
+        <li><a href="Selling.html">Selling</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+
+      <div class="h-btn">
+        <a href="#" class="h-btn1">Login</a>
+        <a href="#" class="h-btn2">SignUp</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <section class="buying" data-aos="zoom-in-up">
+      <div class="buying-content">
+        <h2>Guiding Your Path to Homeownership: Your Expert Partner Awaits</h2>
+      </div>
+      <div class="buying-image">
+        <img src="images/buying.avif" alt="" />
+      </div>
+    </section>
+
+    <section>
+      <div class="tips" data-aos="zoom-in-up">
+        <div class="images" id="tips-image">
+          <img src="images/buying2.avif" alt="" />
+        </div>
+        <div class="content" id="tips-content">
+          <p>
+            Homeownership is a dream for many and a livelihood for some,
+            providing a steady income stream. There are various reasons why you
+            might be considering a home purchase:
+          </p>
+
+          <p>
+            As a first-time buyer, you may be uncertain about where to begin.
+            You want to escape high rental costs and build equity by owning a
+            home. The allure of a brand-new property with modern upgrades tempts
+            you. Upsizing to a better home in the same or a different location
+            is your goal. Investing in a property for your children's future
+            college expenses is a priority. Serious investors seek fixer-uppers,
+            renovating and flipping them for profit. A 1031 Exchange is on your
+            radar. You and a group of friends aim to buy property in
+            partnership, renting it out, and selling it for a profit later.
+            You're interested in purchasing land for future residential or
+            commercial development.
+          </p>
+
+          <p>
+            Regardless of your circumstances, you've worked hard for your money
+            and want to invest wisely in your family's future. Having an expert
+            by your side to navigate these decisions is crucial. Reach out to
+            us, and one of our team members will connect with you to arrange a
+            one-on-one session with an experienced Realtor® who will ensure a
+            smooth and enjoyable process. Stay updated with the latest real
+            estate trends at Real Estate Market 2019. Your dream home is just a
+            step away.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-content">
+        <img src="images/logohome.png" alt="" />
+        <div class="contact-content-text">
+          <p>
+            Your house is not just a dwelling; it's a reflection of you, and
+            it's waiting for you to make it your own, right here in the Bay
+            Area.
+          </p>
+          <div id="icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--AOS Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1200,
+      });
+    </script>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script>
+      barba.init({
+        transitions: [
+          {
+            name: "opacity-transition",
+            leave(data) {
+              return gsap.to(data.current.container, {
+                opacity: 0,
+              });
+            },
+            enter(data) {
+              return gsap.from(data.next.container, {
+                opacity: 0,
+              });
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
